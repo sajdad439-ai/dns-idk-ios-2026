@@ -7,18 +7,33 @@
 		<dict>
 			<key>FullScreen</key>
 			<true/>
+			<key>Icon</key>
+			<data>
+			iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c
+			6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAAB
+			AAEAAKACAAQAAAABAAAAQKADAAQAAAABAAAAQEAAAAB323i/AAAB2UlEQVR4
+			Ae3BsU0DARRE0a+3SFFRg4qOiiEaKgYoI3XQUENFAQ0YgA3A4AQUyA2eA44
+			si331k23f13f+Oeecc84555xz/k/x8PBwtFqt3m9vb7/S+vp69v39/e3+/v5+
+			e3v7/f19fX39/X39/X39/X39/X39/X39/X39/X39/X39/X19fX39/X39/X39
+			/X19fX39/X39/X39/X39/f0FAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAA/M5A6H0m920oAAAAASUVORK5CYII=
+			</data>
 			<key>IsRemovable</key>
 			<true/>
 			<key>Label</key>
-			<string>idk</string>
+			<string>idk Project</string>
 			<key>PayloadDisplayName</key>
-			<string>idk Web Clip</string>
+			<string>idk WebClip App</string>
 			<key>PayloadIdentifier</key>
-			<string>com.idk.webclip</string>
+			<string>com.idkproject.webclip</string>
 			<key>PayloadType</key>
 			<string>com.apple.webClip.managed</string>
 			<key>PayloadUUID</key>
-			<string>A1B2C3D4-E5F6-7890-ABCD-EF1234567890</string>
+			<string>7B9A1234-C567-4E89-9123-456789ABCDEF</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>URL</key>
@@ -29,35 +44,36 @@
 			<dict>
 				<key>DNSProtocol</key>
 				<string>HTTPS</string>
-				<key>ServerName</key>
-				<string>dns.nextdns.io</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>45.90.28.0</string>
+					<string>45.90.30.0</string>
+				</array>
 				<key>ServerURL</key>
-				<string>https://dns.nextdns.io/YOUR_NEXTDNS_ID</string>
+				<string>https://dns.nextdns.io/anti-revoke</string>
 			</dict>
 			<key>PayloadDisplayName</key>
 			<string>idk Anti-Revoke DNS</string>
 			<key>PayloadIdentifier</key>
-			<string>com.idk.dns</string>
+			<string>com.idkproject.dns</string>
 			<key>PayloadType</key>
 			<string>com.apple.dnsSettings.managed</string>
 			<key>PayloadUUID</key>
-			<string>B2C3D4E5-F6A7-8901-BCDE-F12345678901</string>
+			<string>8C0B2345-D678-4F90-A234-567890ABCDEF</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 		</dict>
 	</array>
-	<key>PayloadDescription</key>
-	<string>idk Fullscreen Web App Profile</string>
 	<key>PayloadDisplayName</key>
-	<string>idk - Anti-Revoke &amp; App</string>
+	<string>idk Project (Anti-Revoke &amp; WebClip)</string>
 	<key>PayloadIdentifier</key>
-	<string>com.idk.profile</string>
+	<string>com.idkproject.profile</string>
 	<key>PayloadOrganization</key>
-	<string>idk</string>
+	<string>idk Project</string>
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>C3D4E5F6-A7B8-9012-CDEF-123456789012</string>
+	<string>9D1C3456-E789-4A01-B345-678901ABCDEF</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
