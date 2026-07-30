@@ -1,262 +1,72 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKIBIDI TECH | Profile & Hub</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Tajawal', sans-serif;
-            -webkit-tap-highlight-color: transparent;
-        }
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <!-- WebClip Payload -->
+        <dict>
+            <key>PayloadDisplayName</key>
+            <string>idk Web Clip</string>
+            <key>PayloadIdentifier</key>
+            <string>com.idk.webclip</string>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadUUID</key>
+            <string>A1B2C3D4-E5F6-7890-ABCD-EF1234567890</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Label</key>
+            <string>idk</string>
+            
+            <!-- رابط موقعك المباشر في جيتهاب -->
+            <key>URL</key>
+            <string>https://sajdad439-ai.github.io/dns-idk-ios-2026/</string>
+            
+            <!-- الشاشة الكاملة وإخفاء متصفح سفاري -->
+            <key>FullScreen</key>
+            <true/>
+            <key>IsRemovable</key>
+            <true/>
+        </dict>
 
-        body {
-            background-color: #0d1117;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px 12px;
-        }
+        <!-- DNS Anti-Revoke Payload -->
+        <dict>
+            <key>PayloadDisplayName</key>
+            <string>idk Anti-Revoke DNS</string>
+            <key>PayloadIdentifier</key>
+            <string>com.idk.dns</string>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadUUID</key>
+            <string>B2C3D4E5-F6A7-8901-BCDE-F12345678901</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerName</key>
+                <string>dns.nextdns.io</string>
+                <key>ServerURL</key>
+                <string>https://dns.nextdns.io/YOUR_NEXTDNS_ID</string>
+            </dict>
+        </dict>
+    </array>
 
-        .container {
-            width: 100%;
-            max-width: 420px;
-            background: rgba(22, 27, 34, 0.85);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 28px;
-            padding: 24px 18px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-            text-align: center;
-        }
-
-        /* Profile Header */
-        .profile-header {
-            margin-bottom: 20px;
-        }
-
-        .avatar {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #0088cc;
-            box-shadow: 0 0 20px rgba(0, 136, 204, 0.4);
-            margin-bottom: 10px;
-        }
-
-        .title {
-            font-size: 22px;
-            font-weight: 900;
-            color: #ffffff;
-        }
-
-        .subtitle {
-            font-size: 13px;
-            color: #8b949e;
-            margin-top: 4px;
-        }
-
-        /* Install Profile Banner */
-        .install-box {
-            background: linear-gradient(135deg, #1f6beb, #0969da);
-            border-radius: 20px;
-            padding: 16px;
-            margin-bottom: 24px;
-            box-shadow: 0 8px 24px rgba(31, 107, 235, 0.3);
-        }
-
-        .install-title {
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 6px;
-        }
-
-        .install-desc {
-            font-size: 12px;
-            color: #e6edf3;
-            margin-bottom: 12px;
-        }
-
-        .install-btn {
-            display: inline-block;
-            width: 100%;
-            padding: 12px 0;
-            background-color: #ffffff;
-            color: #0969da;
-            font-weight: 900;
-            font-size: 15px;
-            border-radius: 12px;
-            text-decoration: none;
-            transition: transform 0.2s;
-        }
-
-        .install-btn:active {
-            transform: scale(0.97);
-        }
-
-        /* Section Titles */
-        .section-title {
-            font-size: 13px;
-            font-weight: 700;
-            color: #58a6ff;
-            text-align: right;
-            margin: 16px 6px 10px 6px;
-            text-transform: uppercase;
-        }
-
-        /* Links List */
-        .links-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .link-card {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 16px;
-            padding: 10px 14px;
-            text-decoration: none;
-            color: #ffffff;
-            transition: background 0.2s;
-        }
-
-        .link-card:active {
-            background: #21262d;
-        }
-
-        .link-info {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .icon-img {
-            width: 42px;
-            height: 42px;
-            border-radius: 10px;
-            object-fit: cover;
-        }
-
-        .link-text {
-            text-align: right;
-        }
-
-        .link-title {
-            font-size: 14px;
-            font-weight: 700;
-        }
-
-        .link-desc {
-            font-size: 11px;
-            color: #8b949e;
-            margin-top: 2px;
-        }
-
-        .telegram-border { border-right: 4px solid #0088cc; }
-        .youtube-border { border-right: 4px solid #ff0000; }
-        .tiktok-border { border-right: 4px solid #00f2fe; }
-
-        .footer {
-            margin-top: 20px;
-            font-size: 11px;
-            color: #484f58;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <!-- Profile Header -->
-        <div class="profile-header">
-            <img class="avatar" src="https://i.postimg.cc/bYL4kKtN/5B4848B9-CA34-4F20-A68E-5DDA961DE846.jpg" alt="Logo">
-            <h1 class="title">SKIBIDI TECH</h1>
-            <p class="subtitle">المقر الرسمي للتطبيقات والحلول التقنية</p>
-        </div>
-
-        <!-- DNS Profile Direct Download Section -->
-        <div class="install-box">
-            <div class="install-title">حماية الشهادات (Anti-Revoke)</div>
-            <div class="install-desc">ثبّت ملف التعريف لحماية تطبيقاتك من الإلغاء</div>
-            <!-- هذا هو الرابط الذي يفتح نافذة النظام المنبثقة مباشرة -->
-            <a href="SKIBIDI_Profile.mobileconfig" class="install-btn">
-                تثبيت ملف التعريف الآن
-            </a>
-        </div>
-
-        <!-- Telegram Channels -->
-        <div class="section-title">قنوات تليجرام</div>
-        <div class="links-container">
-            <a href="https://t.me/xar_ipa" target="_blank" class="link-card telegram-border">
-                <div class="link-info">
-                    <img class="icon-img" src="https://i.postimg.cc/D0nzw7FY/57772BCB-6AFE-48B5-BE99-E1E2A1DD38C2.jpg" alt="Telegram Main">
-                    <div class="link-text">
-                        <div class="link-title">قناتي الرئيسية</div>
-                        <div class="link-desc">تطبيقات IPA وشهادات حصرياً</div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://t.me/xar_ipa1" target="_blank" class="link-card telegram-border">
-                <div class="link-info">
-                    <img class="icon-img" src="https://i.postimg.cc/D0nzw7FY/57772BCB-6AFE-48B5-BE99-E1E2A1DD38C2.jpg" alt="Support">
-                    <div class="link-text">
-                        <div class="link-title">قناة حل المشاكل</div>
-                        <div class="link-desc">دعم فني واستفسارات التثبيت</div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://t.me/x_arw" target="_blank" class="link-card telegram-border">
-                <div class="link-info">
-                    <img class="icon-img" src="https://i.postimg.cc/bYL4kKtN/5B4848B9-CA34-4F20-A68E-5DDA961DE846.jpg" alt="Developer">
-                    <div class="link-text">
-                        <div class="link-title">حساب المطور</div>
-                        <div class="link-desc">للتواصل المباشر والاستفسارات</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- Social Media -->
-        <div class="section-title">منصات التواصل الاجتماعي</div>
-        <div class="links-container">
-            <a href="https://youtube.com/@clp9?si=LTl9X8Ip2Ka-yX5a" target="_blank" class="link-card youtube-border">
-                <div class="link-info">
-                    <img class="icon-img" src="https://i.postimg.cc/BbyJ2vHj/3E670D27-DC2E-447B-86D0-8C084DEED035.png" alt="YouTube">
-                    <div class="link-text">
-                        <div class="link-title">قناة اليوتيوب</div>
-                        <div class="link-desc">شروحات وتجارب تطبيقات</div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://www.tiktok.com/@.wpds?_r=1&_t=ZS-98SnXMFmyyj" target="_blank" class="link-card tiktok-border">
-                <div class="link-info">
-                    <img class="icon-img" src="https://i.postimg.cc/ht8qtsym/E5B17CF1-A24B-472B-8586-8060422A1139.png" alt="TikTok">
-                    <div class="link-text">
-                        <div class="link-title">حساب التيك توك</div>
-                        <div class="link-desc">مقاطع سريعة وأحدث الأخبار</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="footer">
-            © 2026 SKIBIDI TECH • All Rights Reserved
-        </div>
-    </div>
-
-</body>
-</html>
+    <key>PayloadDisplayName</key>
+    <string>idk - Anti-Revoke & App</string>
+    <key>PayloadIdentifier</key>
+    <string>com.idk.profile</string>
+    <key>PayloadOrganization</key>
+    <string>idk</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>C3D4E5F6-A7B8-9012-CDEF-123456789012</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadDescription</key>
+    <string>idk Fullscreen App Profile</string>
+</dict>
+</plist>
