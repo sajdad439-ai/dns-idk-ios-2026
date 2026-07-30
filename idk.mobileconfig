@@ -4,7 +4,7 @@
 <dict>
     <key>PayloadContent</key>
     <array>
-        <!-- 1. أيقونة الشاشة الرئيسية (WebClip) -->
+        <!-- 1. أيقونة الشاشة الرئيسية (تطبيق بدون سفاري) -->
         <dict>
             <key>PayloadDisplayName</key>
             <string>idk Web Clip</string>
@@ -18,8 +18,15 @@
             <integer>1</integer>
             <key>Label</key>
             <string>idk</string>
+
+            <!-- ضع رابط موقعك المباشر هنا بدلاً من رابط التليجرام -->
             <key>URL</key>
-            <string>https://t.me/xar_ipa</string>
+            <string>https://YOUR_GITHUB_USERNAME.github.io/dns-idk-ios-2026/</string>
+
+            <!-- هذا الخيار يلغي شريط سفاري بالكامل ويجعله يفتح كتطبيق مستقل -->
+            <key>FullScreen</key>
+            <true/>
+
             <key>IsRemovable</key>
             <true/>
         </dict>
@@ -61,6 +68,6 @@
     <key>PayloadVersion</key>
     <integer>1</integer>
     <key>PayloadDescription</key>
-    <string>idk Anti-Revoke DNS and Official Hub Profile</string>
+    <string>idk Fullscreen Web App and Anti-Revoke Profile</string>
 </dict>
 </plist>
