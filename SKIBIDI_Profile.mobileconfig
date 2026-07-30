@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <!-- 1. أيقونة الشاشة الرئيسية (WebClip) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.skibiditech.webclip</string>
+            <key>PayloadUUID</key>
+            <string>A1B2C3D4-E5F6-7890-ABCD-EF1234567890</string>
+            <key>Label</key>
+            <string>SKIBIDI TECH</string>
+            <key>URL</key>
+            <string>https://t.me/xar_ipa</string>
+            <key>IsRemovable</key>
+            <true/>
+        </dict>
+
+        <!-- 2. إعدادات الـ DNS لمنع إلغاء الشهادات (Anti-Revoke) -->
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.skibiditech.dns</string>
+            <key>PayloadUUID</key>
+            <string>B2C3D4E5-F6A7-8901-BCDE-F12345678901</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerURL</key>
+                <string>https://dns.nextdns.io/YOUR_NEXTDNS_ID</string>
+            </dict>
+        </dict>
+    </array>
+
+    <key>PayloadDisplayName</key>
+    <string>SKIBIDI TECH - Anti-Revoke</string>
+    <key>PayloadIdentifier</key>
+    <string>com.skibiditech.profile</string>
+    <key>PayloadOrganization</key>
+    <string>SKIBIDI TECH</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>C3D4E5F6-A7B8-9012-CDEF-123456789012</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
