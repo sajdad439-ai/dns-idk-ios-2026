@@ -4,7 +4,7 @@
 <dict>
     <key>PayloadContent</key>
     <array>
-        <!-- 1. أيقونة الشاشة الرئيسية (تطبيق بدون سفاري) -->
+        <!-- WebClip - فتح الموقع كتطبيق مستقل بأيقونة وشاشة كاملة -->
         <dict>
             <key>PayloadDisplayName</key>
             <string>idk Web Clip</string>
@@ -18,20 +18,33 @@
             <integer>1</integer>
             <key>Label</key>
             <string>idk</string>
-
-            <!-- ضع رابط موقعك المباشر هنا بدلاً من رابط التليجرام -->
+            
+            <!-- رابط موقعك المباشر الصحيح -->
             <key>URL</key>
-            <string>https://YOUR_GITHUB_USERNAME.github.io/dns-idk-ios-2026/</string>
-
-            <!-- هذا الخيار يلغي شريط سفاري بالكامل ويجعله يفتح كتطبيق مستقل -->
+            <string>https://sajdad439-ai.github.io/dns-idk-ios-2026/</string>
+            
+            <!-- إلغاء شريط سفاري السفلي والعلوي -->
             <key>FullScreen</key>
             <true/>
-
             <key>IsRemovable</key>
             <true/>
+
+            <!-- كود صورة الأيقونة (Base64) -->
+            <key>Icon</key>
+            <data>
+            iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+            jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVh
+            ZHldcl3PAAAB2UlEQVR42u3BAQEAAACCIP+vbqwGGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDY3AAEzAi34AAAAAElFTkSuQmCC
+            </data>
         </dict>
 
-        <!-- 2. إعدادات الـ DNS لحظر الـ Revoke -->
+        <!-- إعدادات الـ DNS لحظر الـ Revoke -->
         <dict>
             <key>PayloadDisplayName</key>
             <string>idk Anti-Revoke DNS</string>
@@ -56,7 +69,7 @@
     </array>
 
     <key>PayloadDisplayName</key>
-    <string>idk - Anti-Revoke</string>
+    <string>idk - Anti-Revoke & App</string>
     <key>PayloadIdentifier</key>
     <string>com.idk.profile</string>
     <key>PayloadOrganization</key>
@@ -68,6 +81,6 @@
     <key>PayloadVersion</key>
     <integer>1</integer>
     <key>PayloadDescription</key>
-    <string>idk Fullscreen Web App and Anti-Revoke Profile</string>
+    <string>idk Fullscreen Web App Profile</string>
 </dict>
 </plist>
