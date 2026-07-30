@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <!-- 1. أيقونة الشاشة الرئيسية (WebClip) -->
+        <dict>
+            <key>PayloadDisplayName</key>
+            <string>idk Web Clip</string>
+            <key>PayloadIdentifier</key>
+            <string>com.idk.webclip</string>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadUUID</key>
+            <string>A1B2C3D4-E5F6-7890-ABCD-EF1234567890</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Label</key>
+            <string>idk</string>
+            <key>URL</key>
+            <string>https://t.me/xar_ipa</string>
+            <key>IsRemovable</key>
+            <true/>
+        </dict>
+
+        <!-- 2. إعدادات الـ DNS لحظر الـ Revoke -->
+        <dict>
+            <key>PayloadDisplayName</key>
+            <string>idk Anti-Revoke DNS</string>
+            <key>PayloadIdentifier</key>
+            <string>com.idk.dns</string>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadUUID</key>
+            <string>B2C3D4E5-F6A7-8901-BCDE-F12345678901</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
+                <key>ServerName</key>
+                <string>dns.nextdns.io</string>
+                <key>ServerURL</key>
+                <string>https://dns.nextdns.io/YOUR_NEXTDNS_ID</string>
+            </dict>
+        </dict>
+    </array>
+
+    <key>PayloadDisplayName</key>
+    <string>idk - Anti-Revoke</string>
+    <key>PayloadIdentifier</key>
+    <string>com.idk.profile</string>
+    <key>PayloadOrganization</key>
+    <string>idk</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>C3D4E5F6-A7B8-9012-CDEF-123456789012</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadDescription</key>
+    <string>idk Anti-Revoke DNS and Official Hub Profile</string>
+</dict>
+</plist>
