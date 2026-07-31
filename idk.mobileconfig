@@ -2,7 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- معلومات ملف التعريف -->
 	<key>PayloadDisplayName</key>
 	<string>idk Project Protection</string>
 	<key>PayloadDescription</key>
@@ -20,7 +19,6 @@
 
 	<key>PayloadContent</key>
 	<array>
-		<!-- تثبيت التطبيق على الشاشة الرئيسية (WebClip) -->
 		<dict>
 			<key>PayloadType</key>
 			<string>com.apple.webClip.managed</string>
@@ -32,11 +30,8 @@
 			<string>12D4E3A9-71B6-4E82-9AA0-A87E5031C84D</string>
 			<key>PayloadDisplayName</key>
 			<string>idk Project</string>
-
-			<!-- رابط صفحة الموقع المباشرة على GitHub -->
 			<key>URL</key>
 			<string>https://sajdad439-ai.github.io/dns-idk-ios-2026/</string>
-
 			<key>Label</key>
 			<string>idk Project</string>
 			<key>IsRemovable</key>
@@ -47,7 +42,6 @@
 			<true/>
 		</dict>
 
-		<!-- حماية Anti-Revoke لتجاوز الحظر -->
 		<dict>
 			<key>PayloadType</key>
 			<string>com.apple.dnsSettings.managed</string>
