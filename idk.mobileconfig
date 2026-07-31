@@ -30,23 +30,10 @@
 			<string>12D4E3A9-71B6-4E82-9AA0-A87E5031C84D</string>
 			<key>PayloadDisplayName</key>
 			<string>idk Project</string>
-			
 			<key>URL</key>
 			<string>https://amar-yt-esgin.freedev.app/</string>
-			
 			<key>Label</key>
 			<string>idk Project</string>
-
-			<!-- أيقونة PNG سليمة ومقبولة من iOS -->
-			<key>Icon</key>
-			<data>
-			iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsT
-			AAALEwEAmpwYAAAAB3RJTUUH5wMDFxA4N2Z5bQAAAB1pVFh0Q29tbWVudAAA
-			AAAACgBjb21tZW50AAAAAAB1c9A4AAAAMUlEQVR42u3BAQEAAACCIP+vbkhA
-			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBfA74AASsBIn4AAAAASUVO
-			RK5CYII=
-			</data>
-
 			<key>IsRemovable</key>
 			<true/>
 			<key>FullScreen</key>
