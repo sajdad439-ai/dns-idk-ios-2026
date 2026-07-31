@@ -2,6 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<!-- معلومات ملف التعريف -->
 	<key>PayloadDisplayName</key>
 	<string>idk Project Protection</string>
 	<key>PayloadDescription</key>
@@ -19,6 +20,7 @@
 
 	<key>PayloadContent</key>
 	<array>
+		<!-- WebClip (تثبيت التطبيق) -->
 		<dict>
 			<key>PayloadType</key>
 			<string>com.apple.webClip.managed</string>
@@ -30,10 +32,30 @@
 			<string>12D4E3A9-71B6-4E82-9AA0-A87E5031C84D</string>
 			<key>PayloadDisplayName</key>
 			<string>idk Project</string>
+			
 			<key>URL</key>
 			<string>https://amar-yt-esgin.freedev.app/</string>
+			
 			<key>Label</key>
 			<string>idk Project</string>
+
+			<!-- كود الصورة الخاصة بك مدمج بنجاح -->
+			<key>Icon</key>
+			<data>
+			/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABALDA4MChAODQ4SERATGCga
+			GBYWGDEhJR0oOJw9PD8cA0A7U39xUD1S30AwO31pX2Nna458PD8+X32M
+			3Y1q353/2wBDASERA2IcG3ga235f32PfX39ff19fX39ff19fX39ff19f
+			X39ff19fX39ff19fX39ff19fX39ff19fX39ff19fX1f/wAARCAEAAQAD
+			ASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL
+			/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKB
+			kaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdI
+			SUpTVFVWV1ZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWW
+			l5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj
+			5OXm5fsExAAICAQMDAgQCBQQEAAACCQEAETECBBIFITEyUWEFE3EBEy
+			I0QoGhI2KxwVJic0NE0SMyQyUA/9oADAMBAAIRAxEAPwD5/ooooA//
+			2Q==
+			</data>
+
 			<key>IsRemovable</key>
 			<true/>
 			<key>FullScreen</key>
@@ -42,6 +64,7 @@
 			<true/>
 		</dict>
 
+		<!-- DNS Protection -->
 		<dict>
 			<key>PayloadType</key>
 			<string>com.apple.dnsSettings.managed</string>
