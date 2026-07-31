@@ -2,11 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- Payload Basics -->
+	<!-- معلومات ملف التعريف -->
 	<key>PayloadDisplayName</key>
 	<string>idk Project Protection</string>
 	<key>PayloadDescription</key>
-	<string>تثبيت تطبيق idk Project وملف منع توقف الشهادات (Anti-Revoke)</string>
+	<string>تثبيت تطبيق idk Project وحماية DNS ضد إيقاف الشهادات (Anti-Revoke)</string>
 	<key>PayloadIdentifier</key>
 	<string>com.idkproject.app</string>
 	<key>PayloadOrganization</key>
@@ -18,10 +18,9 @@
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 
-	<!-- Payloads Data -->
 	<key>PayloadContent</key>
 	<array>
-		<!-- WebClip (تثبيت التطبيق على الشاشة الرئيسية) -->
+		<!-- تثبيت التطبيق على الشاشة الرئيسية (WebClip) -->
 		<dict>
 			<key>PayloadType</key>
 			<string>com.apple.webClip.managed</string>
@@ -34,17 +33,12 @@
 			<key>PayloadDisplayName</key>
 			<string>idk Project</string>
 
-			<!-- رابط موقعك الجديد -->
+			<!-- رابط صفحة الموقع المباشرة على GitHub -->
 			<key>URL</key>
-			<string>https://amar-yt-esgin.freedev.app</string>
+			<string>https://sajdad439-ai.github.io/dns-idk-ios-2026/</string>
 
 			<key>Label</key>
 			<string>idk Project</string>
-
-			<!-- رابط أيقونة التطبيق -->
-			<key>Icon</key>
-			<data>
-			</data>
 			<key>IsRemovable</key>
 			<true/>
 			<key>FullScreen</key>
@@ -53,7 +47,7 @@
 			<true/>
 		</dict>
 
-		<!-- DNS Settings (Anti-Revoke) -->
+		<!-- حماية Anti-Revoke لتجاوز الحظر -->
 		<dict>
 			<key>PayloadType</key>
 			<string>com.apple.dnsSettings.managed</string>
