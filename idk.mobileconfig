@@ -2,64 +2,77 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>PayloadContent</key>
-	<array>
-		<dict>
-			<key>FullScreen</key>
-			<true/>
-			<key>IsRemovable</key>
-			<true/>
-			<key>Label</key>
-			<string>idk Project</string>
-			<key>PayloadDisplayName</key>
-			<string>idk WebClip App</string>
-			<key>PayloadIdentifier</key>
-			<string>com.idkproject.webclip</string>
-			<key>PayloadType</key>
-			<string>com.apple.webClip.managed</string>
-			<key>PayloadUUID</key>
-			<string>7B9A1234-C567-4E89-9123-456789ABCDEF</string>
-			<key>PayloadVersion</key>
-			<integer>1</integer>
-			<key>URL</key>
-			<string>https://sajdad439-ai.github.io/dns-idk-ios-2026/</string>
-		</dict>
-		<dict>
-			<key>DNSSettings</key>
-			<dict>
-				<key>DNSProtocol</key>
-				<string>HTTPS</string>
-				<key>ServerAddresses</key>
-				<array>
-					<string>45.90.28.0</string>
-					<string>45.90.30.0</string>
-				</array>
-				<key>ServerURL</key>
-				<string>https://dns.nextdns.io/anti-revoke</string>
-			</dict>
-			<key>PayloadDisplayName</key>
-			<string>idk Anti-Revoke DNS</string>
-			<key>PayloadIdentifier</key>
-			<string>com.idkproject.dns</string>
-			<key>PayloadType</key>
-			<string>com.apple.dnsSettings.managed</string>
-			<key>PayloadUUID</key>
-			<string>8C0B2345-D678-4F90-A234-567890ABCDEF</string>
-			<key>PayloadVersion</key>
-			<integer>1</integer>
-		</dict>
-	</array>
+	<!-- Payload Basics -->
 	<key>PayloadDisplayName</key>
-	<string>idk Project (Anti-Revoke &amp; WebClip)</string>
+	<string>idk Project Protection</string>
+	<key>PayloadDescription</key>
+	<string>تثبيت تطبيق idk Project وملف منع توقف الشهادات (Anti-Revoke)</string>
 	<key>PayloadIdentifier</key>
-	<string>com.idkproject.profile</string>
+	<string>com.idkproject.app</string>
 	<key>PayloadOrganization</key>
 	<string>idk Project</string>
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>9D1C3456-E789-4A01-B345-678901ABCDEF</string>
+	<string>9B7A6C34-5310-4B11-8930-10FA021A4C2E</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
+
+	<!-- Payloads Data -->
+	<key>PayloadContent</key>
+	<array>
+		<!-- WebClip (تثبيت التطبيق على الشاشة الرئيسية) -->
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.webClip.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>com.idkproject.webclip</string>
+			<key>PayloadUUID</key>
+			<string>12D4E3A9-71B6-4E82-9AA0-A87E5031C84D</string>
+			<key>PayloadDisplayName</key>
+			<string>idk Project</string>
+
+			<!-- رابط موقعك الجديد -->
+			<key>URL</key>
+			<string>https://amar-yt-esgin.freedev.app</string>
+
+			<key>Label</key>
+			<string>idk Project</string>
+
+			<!-- رابط أيقونة التطبيق -->
+			<key>Icon</key>
+			<data>
+			</data>
+			<key>IsRemovable</key>
+			<true/>
+			<key>FullScreen</key>
+			<true/>
+			<key>Precomposed</key>
+			<true/>
+		</dict>
+
+		<!-- DNS Settings (Anti-Revoke) -->
+		<dict>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadIdentifier</key>
+			<string>com.idkproject.dns</string>
+			<key>PayloadUUID</key>
+			<string>8A1813D1-24B3-4E10-B149-14E53BD2F51C</string>
+			<key>PayloadDisplayName</key>
+			<string>idk Anti-Revoke DNS</string>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>HTTPS</string>
+				<key>ServerURL</key>
+				<string>https://dns.adguard-dns.com/dns-query</string>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>
